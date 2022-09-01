@@ -27,4 +27,4 @@ can disagree on which group is treated unfairly. We therefore conclude that
 Burden is a valuable metric to add to the existing group of fairness metrics,
 but should not be used on its own.
 
-Read the full paper at [bursting-burden.pdf](bursting-burden.pdf)!
+Read the full paper at [bursting-burden.pdf](paper/bursting-burden.pdf)!
