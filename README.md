@@ -5,8 +5,8 @@
 By Yochem van Rosmalen, Florian van der Steen, Sebastiaan Jans, and Daan van
 der Weijden.
 
-Submitted to BNAIC/BeNeLearn 2022 conference
-[[link](https://bnaic2022.uantwerpen.be/)].
+As presented at the [BNAIC/BeNeLearn](https://bnaic2022.uantwerpen.be/) 2022
+conference in Mechelen, Belgium.
 
 ### Abstract
 
@@ -28,3 +28,9 @@ Burden is a valuable metric to add to the existing group of fairness metrics,
 but should not be used on its own.
 
 Read the full paper at [bursting-burden.pdf](paper/bursting-burden.pdf)!
+
+### Credits
+
+The implementation of CERTIFAI is written by @Ighina, and can be found at
+github.com/Ighina/CERTIFAI. The Python file of the project is included
+in this repository: CERTIFAI.py. Licensed MIT.
