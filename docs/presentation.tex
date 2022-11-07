@@ -101,7 +101,9 @@ Daan van der Weijden {\scriptsize(\texttt{d.j.weijden@students.uu.nl})}
 
 \begin{frame}{Burden}
     \begin{itemize}
-        \item Sharma et al.'s CERTIFAI\footnote{Counterfactual Explanations for Robustness, Transparency, Interpretability, and Fairness of Artificial Intelligence models} framework \cite{certifai}
+        \item Sharma et al.'s CERTIFAI\footnote{Counterfactual Explanations for
+            Robustness, Transparency, Interpretability, and Fairness of
+            Artificial Intelligence models} framework \cite{certifai}
         \item Cognitive Scale
         \item Multiple domains
         \item Model Agnostic
@@ -118,13 +120,15 @@ Daan van der Weijden {\scriptsize(\texttt{d.j.weijden@students.uu.nl})}
     \centering
     \includegraphics[width=\textwidth]{img/counterfactual_generation_burden.png}
     \end{figure}
-    Evolutionary algorithm for the generation of realistic counterfactuals. Illustration adapted from \cite{certifai}.
+    Evolutionary algorithm for the generation of realistic counterfactuals.
+    Illustration adapted from \cite{certifai}.
 \end{frame}
 
 \begin{frame}{Burden}
     \begin{itemize}
         \item Distance to counterfactual \textrightarrow individual \emph{recourse}.
-        \item Average distance to counterfactual over instances in a group $s$, with $\mathbf{c^*}$ the found counterfactual(s):
+        \item Average distance to counterfactual over instances in a group $s$,
+            with $\mathbf{c^*}$ the found counterfactual(s):
     \end{itemize}
     \begin{align*}\label{eq:burden}
         \text{Burden}_{S=s} &= \mathbb{E}_{S=s}[d(\mathbf{x}, \mathbf{c^*})] \\
@@ -225,8 +229,10 @@ Underprivileged group according to metric in \textbf{boldface}.
 \begin{frame}{Future Work}
     \begin{itemize}
         \item Reduce computational complexity of Burden
-        \item Find real-world datasets with SP and Burden disagree on the direction of unfairness
-        \item Generate counterfactuals for a larger number of datapoints from the Taiwan dataset
+        \item Find real-world datasets with SP and Burden disagree on the
+            direction of unfairness
+        \item Generate counterfactuals for a larger number of datapoints from
+            the Taiwan dataset
     \end{itemize} 
 \end{frame}
 
