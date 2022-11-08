@@ -1,4 +1,4 @@
-\documentclass[aspectratio=169]{beamer}
+\documentclass[handout,aspectratio=169]{beamer}
 \setbeamertemplate{section in toc}[sections numbered]
 
 \usetheme[numbering=fraction]{metropolis}
@@ -100,19 +100,28 @@ Daan van der Weijden {\scriptsize(\texttt{d.j.weijden@students.uu.nl})}
 \subsection{Burden}
 
 \begin{frame}{Burden}
-    \begin{itemize}
-        \item Sharma et al.'s CERTIFAI\footnote{Counterfactual Explanations for
-            Robustness, Transparency, Interpretability, and Fairness of
-            Artificial Intelligence models} framework \cite{certifai}
-        \item Cognitive Scale
-        \item Multiple domains
-        \item Model Agnostic
-        \item Counterfactuals
-        \begin{itemize}
-            \item \alert{Not causal!}
-            \item Generated with genetic algorithm
-        \end{itemize}
-    \end{itemize}
+    \begin{columns}
+        \begin{column}{0.5\textwidth}
+            \begin{itemize}
+                \item Sharma et al.'s CERTIFAI framework \cite{certifai} (2017)
+                \item CognitiveScale
+                \item Multiple domains
+                \item Model Agnostic
+                \item Counterfactuals
+                \begin{itemize}
+                    \item \alert{Not causal!}
+                    \item Generated with genetic algorithm
+                \end{itemize}
+            \end{itemize}
+        \end{column}
+        \begin{column}{0.5\textwidth}
+            \begin{figure}
+                \centering
+                \includegraphics[width=\textwidth]{img/certifai.pdf}
+            \end{figure}
+        \end{column}
+    \end{columns}
+    
 \end{frame}
 
 \begin{frame}{Counterfactual generation}
@@ -120,15 +129,13 @@ Daan van der Weijden {\scriptsize(\texttt{d.j.weijden@students.uu.nl})}
     \centering
     \includegraphics[width=\textwidth]{img/counterfactual_generation_burden.png}
     \end{figure}
-    Evolutionary algorithm for the generation of realistic counterfactuals.
-    Illustration adapted from \cite{certifai}.
+    Evolutionary algorithm for the generation of realistic counterfactuals. Illustration adapted from \cite{certifai}.
 \end{frame}
 
 \begin{frame}{Burden}
     \begin{itemize}
         \item Distance to counterfactual \textrightarrow individual \emph{recourse}.
-        \item Average distance to counterfactual over instances in a group $s$,
-            with $\mathbf{c^*}$ the found counterfactual(s):
+        \item Average distance to counterfactual over instances in a group $s$, with $\mathbf{c^*}$ the found counterfactual(s):
     \end{itemize}
     \begin{align*}\label{eq:burden}
         \text{Burden}_{S=s} &= \mathbb{E}_{S=s}[d(\mathbf{x}, \mathbf{c^*})] \\
@@ -207,6 +214,8 @@ Daan van der Weijden {\scriptsize(\texttt{d.j.weijden@students.uu.nl})}
     \end{tabularx}
 \end{table}
 Underprivileged group according to metric in \textbf{boldface}.
+
+For Taiwan: 0 is women, 1 is men.
 \end{frame}
 
 \section{Conclusions}
@@ -229,10 +238,7 @@ Underprivileged group according to metric in \textbf{boldface}.
 \begin{frame}{Future Work}
     \begin{itemize}
         \item Reduce computational complexity of Burden
-        \item Find real-world datasets with SP and Burden disagree on the
-            direction of unfairness
-        \item Generate counterfactuals for a larger number of datapoints from
-            the Taiwan dataset
+        \item Find real-world datasets with SP and Burden disagree on the direction of unfairness
     \end{itemize} 
 \end{frame}
 
@@ -251,7 +257,7 @@ Underprivileged group according to metric in \textbf{boldface}.
 \end{frame}
 
 
-\begin{frame}{Find the Project on GitHub!}
+\begin{frame}{Find the slides, paper and code on GitHub!}
 
 \begin{center}
     \includegraphics[width=.6\textwidth]{img/github.png}
